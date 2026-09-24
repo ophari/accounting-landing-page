@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AkunPro — Software Akuntansi & Bisnis Modern untuk UMKM dan Perusahaan</title>
+  <meta name="description" content="AkunPro adalah software akuntansi lengkap dan mudah digunakan untuk otomasi faktur, pencatatan biaya, manajemen stok, dan laporan keuangan real-time. Coba gratis 14 hari, tanpa kartu kredit.">
+  <meta name="keywords" content="software akuntansi, aplikasi pembukuan, laporan keuangan, invoice otomatis, manajemen stok, HPP, e-faktur, UMKM">
+  <meta name="author" content="AkunPro">
+  <meta name="theme-color" content="#0a1730">
+  <link rel="canonical" href="https://akunpro.id/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AkunPro">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://akunpro.id/">
+  <meta property="og:title" content="AkunPro — Kelola Pembukuan & Arus Kas Bisnis Lebih Cepat Tanpa Ribet">
+  <meta property="og:description" content="Software akuntansi lengkap untuk otomasi faktur, manajemen stok, dan laporan keuangan real-time. Dipercaya 500+ bisnis di Indonesia.">
+  <meta property="og:image" content="https://akunpro.id/assets/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AkunPro — Software Akuntansi & Bisnis Modern">
+  <meta name="twitter:description" content="Otomasi faktur, stok, dan laporan keuangan real-time dalam satu aplikasi.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1730'/%3E%3Cpath d='M9 22l4.6-12h4.8L23 22h-3.6l-.9-2.6h-5l-.9 2.6H9zm5.4-5.3h3.2L16 12.1l-1.6 4.6z' fill='%2312b76a'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/theme.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AkunPro",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web, Windows, Android, iOS",
+    "description": "Software akuntansi dan manajemen bisnis untuk UMKM dan perusahaan di Indonesia.",
+    "offers": { "@type": "Offer", "price": "199000", "priceCurrency": "IDR" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "512" }
+  }
+  </script>
+</head>
+
+<body class="bg-white font-sans text-navy-900 antialiased">
+  <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header data-header class="site-header sticky top-0 z-50">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="flex h-[72px] items-center justify-between gap-4">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="AkunPro — beranda">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-navy-950 shadow-soft">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 19l5.2-14h5.6L20 19h-4l-1-3H9l-1 3H4z" fill="#12b76a"/>
+              <path d="M10.2 13h3.6L12 7.6 10.2 13z" fill="#0a1730"/>
+            </svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block text-lg font-extrabold tracking-tight text-navy-950">AkunPro</span>
+            <span class="block text-[11px] font-medium text-navy-500">Akuntansi &amp; Bisnis</span>
+          </span>
+        </a>
+
+        <!-- Navigasi desktop -->
+        <nav class="hidden items-center gap-1 lg:flex" aria-label="Navigasi utama">
+          <a href="index.html" data-nav-link class="nav-link">Beranda</a>
+          <a href="features.html" data-nav-link class="nav-link">Fitur</a>
+          <a href="about.html" data-nav-link class="nav-link">Tentang Kami</a>
+          <a href="blog.html" data-nav-link class="nav-link">Blog</a>
+          <a href="contact.html" data-nav-link class="nav-link">Kontak</a>
+        </nav>
+
+        <!-- CTA desktop -->
+        <div class="hidden items-center gap-2 lg:flex">
+          <a href="#dashboard" class="btn btn-ghost btn-sm">Lihat Demo</a>
+          <a href="contact.html" class="btn btn-primary btn-sm">Coba Gratis 14 Hari</a>
+        </div>
+
+        <!-- Tombol menu mobile -->
+        <button type="button" data-menu-toggle class="menu-toggle lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" data-mobile-menu class="mobile-menu bg-white lg:hidden">
+      <div class="mx-auto max-w-7xl px-5 pb-6 pt-2 sm:px-6">
+        <nav aria-label="Navigasi mobile">
+          <a href="index.html" data-nav-link class="mobile-link">Beranda <span aria-hidden="true">→</span></a>
+          <a href="features.html" data-nav-link class="mobile-link">Fitur <span aria-hidden="true">→</span></a>
+          <a href="about.html" data-nav-link class="mobile-link">Tentang Kami <span aria-hidden="true">→</span></a>
+          <a href="blog.html" data-nav-link class="mobile-link">Blog <span aria-hidden="true">→</span></a>
+          <a href="contact.html" data-nav-link class="mobile-link">Kontak <span aria-hidden="true">→</span></a>
+        </nav>
+        <div class="mt-5 grid gap-2.5">
+          <a href="contact.html" class="btn btn-primary btn-block">Coba Gratis 14 Hari</a>
+          <a href="#" data-wa-link data-wa-text="Halo AkunPro, saya ingin konsultasi gratis mengenai software akuntansi." class="btn btn-outline btn-block">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.58-.35z"/></svg>
+            Chat WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-navy-50 via-white to-white">
+      <div class="bg-grid mask-fade-b absolute inset-0" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-40 -top-40 h-96 w-96 rounded-full bg-accent-200/30 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-32 top-20 h-[26rem] w-[26rem] rounded-full bg-navy-200/40 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 pb-20 pt-14 sm:px-6 lg:px-8 lg:pb-28 lg:pt-20">
+        <div class="grid items-center gap-14 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-10">
+
+          <!-- Kolom teks -->
+          <div data-reveal>
+            <span class="eyebrow">
+              <span class="grid h-5 w-5 place-items-center rounded-full bg-accent-500 text-white">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              Siap e-Faktur &amp; standar akuntansi Indonesia
+            </span>
+
+            <h1 class="mt-5 text-[2.1rem] font-extrabold leading-[1.12] tracking-tight text-navy-950 sm:text-5xl lg:text-[3.35rem]">
+              Kelola Pembukuan &amp; Arus Kas Bisnis
+              <span class="relative whitespace-nowrap text-accent-600">
+                Lebih Cepat
+                <svg class="absolute -bottom-1.5 left-0 w-full" height="10" viewBox="0 0 200 10" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M2 7.5C40 3 100 1.5 198 5" stroke="#34d18b" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+              </span>
+              Tanpa Ribet
+            </h1>
+
+            <p class="mt-6 max-w-xl text-base leading-relaxed text-navy-700/90 sm:text-lg">
+              Software akuntansi lengkap dan mudah digunakan untuk otomasi faktur, pencatatan biaya,
+              manajemen stok, dan laporan keuangan real-time — semuanya dalam satu dashboard terpadu.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Mulai Uji Coba Gratis
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a href="#dashboard" class="btn btn-outline btn-lg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5v-7z" fill="currentColor" stroke="none"/></svg>
+                Lihat Demo Sistem
+              </a>
+            </div>
+
+            <ul class="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2.5 text-sm font-medium text-navy-600">
+              <li class="flex items-center gap-1.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#12b76a" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Gratis 14 hari
+              </li>
+              <li class="flex items-center gap-1.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#12b76a" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Tanpa kartu kredit
+              </li>
+              <li class="flex items-center gap-1.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#12b76a" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Pendampingan onboarding
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mockup dashboard -->
+          <div class="relative" data-reveal data-reveal-delay="140">
+            <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-tr from-navy-100/70 via-white to-accent-100/60 blur-xl" aria-hidden="true"></div>
+
+            <div class="relative rounded-2xl border border-navy-100 bg-white p-2.5 shadow-lift">
+              <!-- Bar jendela aplikasi -->
+              <div class="flex items-center gap-2 rounded-t-xl bg-navy-950 px-4 py-2.5">
+                <span class="h-2.5 w-2.5 rounded-full bg-rose-400/90"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-amber-400/90"></span>
+                <span class="h-2.5 w-2.5 rounded-full bg-accent-400/90"></span>
+                <span class="ml-3 text-[11px] font-medium text-white/60">app.akunpro.id/dashboard</span>
+                <span class="ml-auto hidden items-center gap-1.5 text-[11px] font-medium text-accent-300 sm:flex">
+                  <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent-400"></span> Real-time
+                </span>
+              </div>
+
+              <div class="rounded-b-xl bg-navy-50/60 p-3 sm:p-4">
+                <!-- Header dashboard -->
+                <div class="mb-3 flex items-end justify-between">
+                  <div>
+                    <p class="text-[11px] font-medium uppercase tracking-wide text-navy-500">Ringkasan Bulan Ini</p>
+                    <p class="text-lg font-extrabold tracking-tight text-navy-950">Rp 486.250.000</p>
+                  </div>
+                  <span class="chip bg-accent-50 text-accent-700">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M5 15l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    18,4%
+                  </span>
+                </div>
+
+                <!-- KPI -->
+                <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                  <div class="rounded-xl border border-navy-100 bg-white p-2.5 sm:p-3">
+                    <p class="text-[10px] font-medium text-navy-500 sm:text-[11px]">Piutang</p>
+                    <p class="mt-0.5 text-sm font-bold text-navy-950 sm:text-base">Rp 92,4jt</p>
+                    <div class="mt-2 h-1.5 overflow-hidden rounded-full bg-navy-100"><div class="h-full w-[62%] rounded-full bg-navy-500"></div></div>
+                  </div>
+                  <div class="rounded-xl border border-navy-100 bg-white p-2.5 sm:p-3">
+                    <p class="text-[10px] font-medium text-navy-500 sm:text-[11px]">Kas &amp; Bank</p>
+                    <p class="mt-0.5 text-sm font-bold text-navy-950 sm:text-base">Rp 231,8jt</p>
+                    <div class="mt-2 h-1.5 overflow-hidden rounded-full bg-navy-100"><div class="h-full w-[84%] rounded-full bg-accent-500"></div></div>
+                  </div>
+                  <div class="rounded-xl border border-navy-100 bg-white p-2.5 sm:p-3">
+                    <p class="text-[10px] font-medium text-navy-500 sm:text-[11px]">Laba Bersih</p>
+                    <p class="mt-0.5 text-sm font-bold text-navy-950 sm:text-base">Rp 74,1jt</p>
+                    <div class="mt-2 h-1.5 overflow-hidden rounded-full bg-navy-100"><div class="h-full w-[48%] rounded-full bg-amber-400"></div></div>
+                  </div>
+                </div>
+
+                <!-- Grafik batang -->
+                <div class="mt-3 rounded-xl border border-navy-100 bg-white p-3 sm:p-4">
+                  <div class="mb-3 flex items-center justify-between">
+                    <p class="text-xs font-semibold text-navy-900">Arus Kas 8 Bulan Terakhir</p>
+                    <div class="flex items-center gap-3 text-[10px] font-medium text-navy-500">
+                      <span class="flex items-center gap-1"><span class="h-2 w-2 rounded-sm bg-navy-600"></span>Masuk</span>
+                      <span class="flex items-center gap-1"><span class="h-2 w-2 rounded-sm bg-accent-400"></span>Keluar</span>
+                    </div>
+                  </div>
+                  <div class="flex h-28 items-end justify-between gap-1.5 sm:gap-2.5">
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[48%] flex-1 bg-navy-600" style="animation-delay:.05s"></div><div class="mock-bar animate-grow-bar h-[30%] flex-1 bg-accent-400" style="animation-delay:.1s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[62%] flex-1 bg-navy-600" style="animation-delay:.12s"></div><div class="mock-bar animate-grow-bar h-[38%] flex-1 bg-accent-400" style="animation-delay:.17s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[45%] flex-1 bg-navy-600" style="animation-delay:.19s"></div><div class="mock-bar animate-grow-bar h-[34%] flex-1 bg-accent-400" style="animation-delay:.24s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[72%] flex-1 bg-navy-600" style="animation-delay:.26s"></div><div class="mock-bar animate-grow-bar h-[44%] flex-1 bg-accent-400" style="animation-delay:.31s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[58%] flex-1 bg-navy-600" style="animation-delay:.33s"></div><div class="mock-bar animate-grow-bar h-[40%] flex-1 bg-accent-400" style="animation-delay:.38s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[84%] flex-1 bg-navy-600" style="animation-delay:.4s"></div><div class="mock-bar animate-grow-bar h-[52%] flex-1 bg-accent-400" style="animation-delay:.45s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[68%] flex-1 bg-navy-600" style="animation-delay:.47s"></div><div class="mock-bar animate-grow-bar h-[41%] flex-1 bg-accent-400" style="animation-delay:.52s"></div></div>
+                    <div class="flex h-full flex-1 items-end gap-0.5"><div class="mock-bar animate-grow-bar h-[95%] flex-1 bg-accent-500" style="animation-delay:.54s"></div><div class="mock-bar animate-grow-bar h-[49%] flex-1 bg-accent-300" style="animation-delay:.59s"></div></div>
+                  </div>
+                  <div class="mt-2 flex justify-between text-[9px] font-medium text-navy-400 sm:text-[10px]">
+                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>Mei</span><span>Jun</span><span>Jul</span><span>Ags</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kartu melayang -->
+            <div class="absolute -left-3 bottom-16 hidden animate-float rounded-xl border border-navy-100 bg-white p-3 shadow-card sm:block">
+              <div class="flex items-center gap-2.5">
+                <span class="grid h-9 w-9 place-items-center rounded-lg bg-accent-50 text-accent-600">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12h6m-6 4h4m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.6L19 9.4V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <p class="text-[11px] font-medium text-navy-500">Invoice terkirim</p>
+                  <p class="text-sm font-bold text-navy-950">128 hari ini</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute -right-2 top-20 hidden animate-float rounded-xl border border-navy-100 bg-white p-3 shadow-card sm:block" style="animation-delay:1.6s">
+              <div class="flex items-center gap-2.5">
+                <span class="grid h-9 w-9 place-items-center rounded-lg bg-navy-50 text-navy-600">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <p class="text-[11px] font-medium text-navy-500">Tutup buku</p>
+                  <p class="text-sm font-bold text-navy-950">7× lebih cepat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== TRUST BADGES / KLIEN ====================== -->
+    <section class="border-y border-navy-100 bg-white py-10 sm:py-12" aria-labelledby="trust-heading">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <h2 id="trust-heading" class="sr-only">Dipercaya oleh bisnis di Indonesia</h2>
+
+        <div class="grid gap-8 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-12">
+          <div class="text-center lg:text-left" data-reveal>
+            <p class="text-sm font-semibold text-navy-900">
+              Dipercaya oleh <span class="text-accent-600" data-count-to="500">0</span>+ bisnis di Indonesia
+            </p>
+            <div class="mt-1.5 flex items-center justify-center gap-1.5 lg:justify-start">
+              <span class="flex text-amber-400" aria-hidden="true">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              </span>
+              <span class="text-xs font-medium text-navy-500">4,9 / 5 dari 512 ulasan</span>
+            </div>
+          </div>
+
+          <!-- Logo klien (marquee) -->
+          <div class="marquee" data-reveal data-reveal-delay="100">
+            <div class="marquee-track items-center gap-10 pr-10 sm:gap-14 sm:pr-14">
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">Nusantara Retail</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">Sinar Jaya Mandiri</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">KopiKita Group</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">Mitra Farma</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">Bangun Cipta</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl">Anugerah Tekstil</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">Nusantara Retail</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">Sinar Jaya Mandiri</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">KopiKita Group</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">Mitra Farma</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">Bangun Cipta</span>
+              <span class="whitespace-nowrap text-lg font-extrabold tracking-tight text-navy-300 sm:text-xl" aria-hidden="true">Anugerah Tekstil</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Statistik -->
+        <dl class="mt-10 grid grid-cols-2 gap-4 border-t border-navy-100 pt-8 sm:gap-6 lg:grid-cols-4">
+          <div class="text-center" data-reveal>
+            <dt class="sr-only">Bisnis aktif</dt>
+            <dd><span class="text-2xl font-extrabold tracking-tight text-navy-950 sm:text-3xl"><span data-count-to="500">0</span>+</span>
+              <span class="mt-1 block text-xs font-medium text-navy-500 sm:text-sm">Bisnis aktif</span></dd>
+          </div>
+          <div class="text-center" data-reveal data-reveal-delay="80">
+            <dt class="sr-only">Transaksi diproses</dt>
+            <dd><span class="text-2xl font-extrabold tracking-tight text-navy-950 sm:text-3xl"><span data-count-to="12">0</span>jt+</span>
+              <span class="mt-1 block text-xs font-medium text-navy-500 sm:text-sm">Transaksi diproses</span></dd>
+          </div>
+          <div class="text-center" data-reveal data-reveal-delay="160">
+            <dt class="sr-only">Waktu tutup buku lebih cepat</dt>
+            <dd><span class="text-2xl font-extrabold tracking-tight text-navy-950 sm:text-3xl"><span data-count-to="78">0</span>%</span>
+              <span class="mt-1 block text-xs font-medium text-navy-500 sm:text-sm">Tutup buku lebih cepat</span></dd>
+          </div>
+          <div class="text-center" data-reveal data-reveal-delay="240">
+            <dt class="sr-only">Uptime layanan</dt>
+            <dd><span class="text-2xl font-extrabold tracking-tight text-navy-950 sm:text-3xl"><span data-count-to="99.9" data-count-decimals="1">0</span>%</span>
+              <span class="mt-1 block text-xs font-medium text-navy-500 sm:text-sm">Uptime layanan</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ========================= 6 FITUR UTAMA ========================= -->
+    <section id="fitur" class="py-20 sm:py-24" aria-labelledby="features-heading">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+
+        <div class="mx-auto max-w-2xl text-center" data-reveal>
+          <span class="eyebrow">Pilar Fitur Inti</span>
+          <h2 id="features-heading" class="mt-4 text-3xl font-extrabold tracking-tight text-navy-950 sm:text-4xl">
+            Semua yang bisnis Anda butuhkan untuk pembukuan rapi
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-navy-600">
+            Enam modul inti yang menghapus pekerjaan manual — dari penerbitan faktur sampai laporan
+            laba rugi yang siap diserahkan ke manajemen dan kantor pajak.
+          </p>
+        </div>
+
+        <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+          <article class="card card-hover p-6" data-reveal>
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 12h6m-6 4h4m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.6L19 9.4V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Invoicing &amp; Piutang Otomatis</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              Terbitkan faktur berlogo perusahaan dalam hitungan detik, kirim otomatis lewat email dan
+              WhatsApp, lalu biarkan sistem menagih jatuh tempo untuk Anda.
+            </p>
+            <a href="features.html#invoicing" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Pelajari modul
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card card-hover p-6" data-reveal data-reveal-delay="70">
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Smart Inventory &amp; Costing (HPP)</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              Mutasi stok tersinkron real-time dari pembelian hingga penjualan, dengan kalkulasi HPP
+              metode FIFO atau Average yang akurat sampai digit terakhir.
+            </p>
+            <a href="features.html#inventory" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Pelajari modul
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card card-hover p-6" data-reveal data-reveal-delay="140">
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10m5 10V4m5 16v-7m5 7V8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Laba Rugi &amp; Neraca 1-Klik</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              Laporan laba rugi, neraca, dan arus kas tersusun otomatis setiap transaksi masuk.
+              Tak perlu menunggu akhir bulan untuk tahu posisi keuangan.
+            </p>
+            <a href="features.html#reporting" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Pelajari modul
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card card-hover p-6" data-reveal>
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M9 15l6-6m-5.5.5h.01m4.99 5h.01M12 3l7.5 3.2v5.1c0 4.4-3 8.5-7.5 9.7-4.5-1.2-7.5-5.3-7.5-9.7V6.2L12 3z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Pencatatan Pajak &amp; e-Faktur Ready</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              PPN dan PPh terhitung otomatis pada setiap transaksi, dengan file ekspor yang siap
+              diunggah ke aplikasi e-Faktur maupun e-Bupot.
+            </p>
+            <a href="blog.html" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Baca panduan pajak
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card card-hover p-6" data-reveal data-reveal-delay="70">
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M4 10h16M5.5 6.5L12 3.5l6.5 3M5 10v11m14-11v11M9 14v3m6-3v3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Rekonsiliasi Bank Otomatis</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              Impor mutasi rekening, lalu sistem mencocokkan sendiri dengan jurnal Anda. Selisih
+              langsung tersorot agar tidak ada transaksi yang terlewat.
+            </p>
+            <a href="features.html#reporting" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Pelajari modul
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+          <article class="card card-hover p-6" data-reveal data-reveal-delay="140">
+            <span class="icon-tile">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 20h4v-1.5a3 3 0 00-4.2-2.75M17 20H7m10 0v-1.5c0-.6-.1-1.2-.35-1.75M7 20H3v-1.5a3 3 0 014.2-2.75M7 20v-1.5c0-.6.1-1.2.35-1.75m0 0a5 5 0 019.3 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h3 class="mt-5 text-lg font-bold tracking-tight text-navy-950">Multi-User &amp; Hak Akses Bertingkat</h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-navy-600">
+              Atur peran kasir, supervisor, dan akuntan utama secara terpisah. Setiap perubahan data
+              terekam pada audit trail yang tidak bisa dihapus.
+            </p>
+            <a href="features.html#multi" class="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent-600 hover:text-accent-700">
+              Pelajari modul
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="mt-12 text-center" data-reveal>
+          <a href="features.html" class="btn btn-navy btn-lg">
+            Lihat seluruh modul AkunPro
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== SHOWCASE DASHBOARD BERTAB =================== -->
+    <section id="dashboard" class="relative overflow-hidden bg-navy-950 py-20 sm:py-24" aria-labelledby="dashboard-heading">
+      <div class="bg-grid-dark absolute inset-0" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute left-1/2 top-0 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-accent-500/20 blur-[100px]" aria-hidden="true"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center" data-reveal>
+          <span class="eyebrow eyebrow-light">Showcase Interaktif</span>
+          <h2 id="dashboard-heading" class="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+            Satu dashboard, seluruh siklus akuntansi
+          </h2>
+          <p class="mt-4 text-base leading-relaxed text-navy-200">
+            Klik setiap tab untuk melihat tampilan modul yang akan tim Anda gunakan sehari-hari.
+          </p>
+        </div>
+
+        <div class="mt-12" data-tabs data-tabs-default="penjualan" data-reveal>
+          <!-- Navigasi tab -->
+          <div class="flex justify-center">
+            <div class="flex w-full max-w-3xl gap-1 overflow-x-auto rounded-2xl border border-white/10 bg-white/5 p-1.5 backdrop-blur sm:justify-center" role="tablist" aria-label="Modul dashboard AkunPro">
+              <button type="button" class="tab-btn flex-1 justify-center" data-tab-btn="penjualan" role="tab" aria-selected="true" aria-controls="panel-penjualan" id="tab-penjualan">
+                <span class="tab-dot" aria-hidden="true"></span> Penjualan
+              </button>
+              <button type="button" class="tab-btn flex-1 justify-center" data-tab-btn="pembelian" role="tab" aria-selected="false" aria-controls="panel-pembelian" id="tab-pembelian">
+                <span class="tab-dot" aria-hidden="true"></span> Pembelian
+              </button>
+              <button type="button" class="tab-btn flex-1 justify-center" data-tab-btn="kas" role="tab" aria-selected="false" aria-controls="panel-kas" id="tab-kas">
+                <span class="tab-dot" aria-hidden="true"></span> Kas/Bank
+              </button>
+              <button type="button" class="tab-btn flex-1 justify-center" data-tab-btn="laporan" role="tab" aria-selected="false" aria-controls="panel-laporan" id="tab-laporan">
+                <span class="tab-dot" aria-hidden="true"></span> Laporan Keuangan
+              </button>
+            </div>
+          </div>
+
+          <!-- ---------- Panel: Penjualan ---------- -->
+          <div class="mt-9" data-tab-panel="penjualan" id="panel-penjualan" role="tabpanel" aria-labelledby="tab-penjualan" tabindex="0">
+            <div class="grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-center">
+              <div class="mock-window shadow-lift">
+                <div class="flex items-center justify-between border-b border-navy-100 bg-navy-50/70 px-4 py-3">
+                  <p class="text-sm font-bold text-navy-950">Daftar Faktur Penjualan</p>
+                  <span class="chip bg-accent-50 text-accent-700">Agustus 2025</span>
+                </div>
+                <div class="grid grid-cols-3 gap-px bg-navy-100">
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Total Penjualan</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 486,2jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Sudah Dibayar</p><p class="mt-1 text-base font-extrabold text-accent-600">Rp 393,8jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Jatuh Tempo</p><p class="mt-1 text-base font-extrabold text-rose-500">Rp 92,4jt</p></div>
+                </div>
+                <div class="divide-y divide-navy-50">
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-navy-50 text-xs font-bold text-navy-600">NR</span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">INV/2025/08/0412 — Nusantara Retail</p><p class="text-xs text-navy-500">Jatuh tempo 12 Sep 2025</p></div>
+                    <div class="text-right"><p class="text-sm font-bold text-navy-950">Rp 48.500.000</p><span class="text-[11px] font-semibold text-accent-600">Lunas</span></div>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-navy-50 text-xs font-bold text-navy-600">KK</span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">INV/2025/08/0413 — KopiKita Group</p><p class="text-xs text-navy-500">Jatuh tempo 18 Sep 2025</p></div>
+                    <div class="text-right"><p class="text-sm font-bold text-navy-950">Rp 17.250.000</p><span class="text-[11px] font-semibold text-amber-600">Menunggu</span></div>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-navy-50 text-xs font-bold text-navy-600">MF</span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">INV/2025/08/0414 — Mitra Farma</p><p class="text-xs text-navy-500">Terlambat 4 hari</p></div>
+                    <div class="text-right"><p class="text-sm font-bold text-navy-950">Rp 9.870.000</p><span class="text-[11px] font-semibold text-rose-500">Jatuh tempo</span></div>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-navy-50 text-xs font-bold text-navy-600">BC</span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">INV/2025/08/0415 — Bangun Cipta</p><p class="text-xs text-navy-500">Jatuh tempo 25 Sep 2025</p></div>
+                    <div class="text-right"><p class="text-sm font-bold text-navy-950">Rp 126.400.000</p><span class="text-[11px] font-semibold text-accent-600">Lunas</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-navy-100">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Penjualan &amp; piutang selalu terpantau</h3>
+                <p class="mt-3 text-sm leading-relaxed text-navy-200">
+                  Pantau faktur lunas, menunggu, dan jatuh tempo dalam satu layar. Pengingat pembayaran
+                  terkirim otomatis sehingga tim Anda tidak perlu menagih satu per satu.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Faktur kustom berlogo perusahaan</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Pengiriman otomatis via WhatsApp &amp; email</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Aging piutang per pelanggan</li>
+                </ul>
+                <a href="features.html#invoicing" class="btn btn-outline-light mt-7">Detail modul penjualan</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- Panel: Pembelian ---------- -->
+          <div class="mt-9 hidden" data-tab-panel="pembelian" id="panel-pembelian" role="tabpanel" aria-labelledby="tab-pembelian" tabindex="0">
+            <div class="grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-center">
+              <div class="mock-window shadow-lift">
+                <div class="flex items-center justify-between border-b border-navy-100 bg-navy-50/70 px-4 py-3">
+                  <p class="text-sm font-bold text-navy-950">Purchase Order &amp; Utang Usaha</p>
+                  <span class="chip bg-navy-100 text-navy-700">4 PO menunggu approval</span>
+                </div>
+                <div class="grid grid-cols-3 gap-px bg-navy-100">
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Total Pembelian</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 268,7jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Utang Usaha</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 74,3jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Hemat Diskon</p><p class="mt-1 text-base font-extrabold text-accent-600">Rp 6,1jt</p></div>
+                </div>
+                <div class="divide-y divide-navy-50">
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-accent-50 text-accent-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">PO/2025/08/118 — CV Sumber Bahan</p><p class="text-xs text-navy-500">Diterima lengkap · 3 item</p></div>
+                    <p class="text-sm font-bold text-navy-950">Rp 62.400.000</p>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-amber-50 text-amber-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 8v4l3 2m6-2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">PO/2025/08/119 — PT Logistik Prima</p><p class="text-xs text-navy-500">Menunggu approval supervisor</p></div>
+                    <p class="text-sm font-bold text-navy-950">Rp 18.900.000</p>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-navy-50 text-navy-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">PO/2025/08/120 — UD Karya Mandiri</p><p class="text-xs text-navy-500">Sebagian diterima · 7 dari 12 item</p></div>
+                    <p class="text-sm font-bold text-navy-950">Rp 31.750.000</p>
+                  </div>
+                  <div class="bg-navy-50/60 px-4 py-3">
+                    <div class="flex items-center gap-2 text-xs font-semibold text-navy-700">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#e11d48" stroke-width="2.2" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9L2.5 17.4A2 2 0 004.2 20.5h15.6a2 2 0 001.7-3.1L13.7 3.9a2 2 0 00-3.4 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      3 bahan baku menipis — sistem menyarankan PO ulang
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-navy-100">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Pembelian terkontrol, stok tidak pernah kosong</h3>
+                <p class="mt-3 text-sm leading-relaxed text-navy-200">
+                  Alur purchase order sampai penerimaan barang tercatat rapi lengkap dengan approval
+                  bertingkat, sehingga pengeluaran tetap sesuai anggaran.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Approval bertingkat sebelum PO terbit</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Penerimaan parsial &amp; retur pembelian</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Perbandingan harga antar pemasok</li>
+                </ul>
+                <a href="features.html#inventory" class="btn btn-outline-light mt-7">Detail modul pembelian</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- Panel: Kas/Bank ---------- -->
+          <div class="mt-9 hidden" data-tab-panel="kas" id="panel-kas" role="tabpanel" aria-labelledby="tab-kas" tabindex="0">
+            <div class="grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-center">
+              <div class="mock-window shadow-lift">
+                <div class="flex items-center justify-between border-b border-navy-100 bg-navy-50/70 px-4 py-3">
+                  <p class="text-sm font-bold text-navy-950">Rekonsiliasi Kas &amp; Bank</p>
+                  <span class="chip bg-accent-50 text-accent-700">96% tercocokkan otomatis</span>
+                </div>
+                <div class="grid gap-px bg-navy-100 sm:grid-cols-3">
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">BCA · 8820</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 168,3jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Mandiri · 4471</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 51,2jt</p></div>
+                  <div class="bg-white p-3.5"><p class="text-[11px] font-medium text-navy-500">Kas Kecil</p><p class="mt-1 text-base font-extrabold text-navy-950">Rp 12,3jt</p></div>
+                </div>
+                <div class="divide-y divide-navy-50">
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-accent-50 text-accent-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5m-7 7l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">Transfer masuk — Nusantara Retail</p><p class="text-xs text-navy-500">Cocok dengan INV/2025/08/0412</p></div>
+                    <p class="text-sm font-bold text-accent-600">+ Rp 48.500.000</p>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-rose-50 text-rose-500"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14m7-7l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">Pembayaran gaji Agustus</p><p class="text-xs text-navy-500">Cocok dengan jurnal JV/08/0091</p></div>
+                    <p class="text-sm font-bold text-rose-500">− Rp 96.200.000</p>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 bg-amber-50/60 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-amber-100 text-amber-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 9v4m0 4h.01" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">Biaya admin bank</p><p class="text-xs text-amber-700">Belum ada pasangan jurnal — perlu ditinjau</p></div>
+                    <p class="text-sm font-bold text-navy-950">− Rp 35.000</p>
+                  </div>
+                  <div class="mock-row flex items-center gap-3 px-4 py-3">
+                    <span class="grid h-8 w-8 flex-none place-items-center rounded-lg bg-accent-50 text-accent-600"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5m-7 7l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    <div class="min-w-0 flex-1"><p class="truncate text-sm font-semibold text-navy-950">Settlement QRIS harian</p><p class="text-xs text-navy-500">Cocok dengan 214 transaksi kasir</p></div>
+                    <p class="text-sm font-bold text-accent-600">+ Rp 27.940.000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-navy-100">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Rekonsiliasi bank selesai dalam menit</h3>
+                <p class="mt-3 text-sm leading-relaxed text-navy-200">
+                  Unggah mutasi rekening, lalu AkunPro mencocokkan otomatis dengan jurnal Anda. Hanya
+                  selisih yang perlu ditinjau manual — sisanya beres sendiri.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Impor mutasi CSV dari bank mana pun</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Multi rekening &amp; kas kecil per cabang</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Proyeksi arus kas 30 hari ke depan</li>
+                </ul>
+                <a href="features.html#reporting" class="btn btn-outline-light mt-7">Detail modul kas &amp; bank</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- Panel: Laporan Keuangan ---------- -->
+          <div class="mt-9 hidden" data-tab-panel="laporan" id="panel-laporan" role="tabpanel" aria-labelledby="tab-laporan" tabindex="0">
+            <div class="grid gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-center">
+              <div class="mock-window shadow-lift">
+                <div class="flex items-center justify-between border-b border-navy-100 bg-navy-50/70 px-4 py-3">
+                  <p class="text-sm font-bold text-navy-950">Laporan Laba Rugi — Agustus 2025</p>
+                  <div class="flex gap-1.5">
+                    <span class="chip bg-white text-navy-600">PDF</span>
+                    <span class="chip bg-white text-navy-600">Excel</span>
+                  </div>
+                </div>
+                <div class="p-4">
+                  <table class="w-full text-sm">
+                    <tbody>
+                      <tr class="border-b border-navy-50"><td class="py-2 text-navy-700">Pendapatan Penjualan</td><td class="py-2 text-right font-semibold text-navy-950">Rp 486.250.000</td></tr>
+                      <tr class="border-b border-navy-50"><td class="py-2 text-navy-700">Retur &amp; Potongan</td><td class="py-2 text-right font-semibold text-navy-950">(Rp 8.140.000)</td></tr>
+                      <tr class="border-b border-navy-100 bg-navy-50/50"><td class="py-2 pl-2 font-semibold text-navy-900">Pendapatan Bersih</td><td class="py-2 pr-2 text-right font-bold text-navy-950">Rp 478.110.000</td></tr>
+                      <tr class="border-b border-navy-50"><td class="py-2 text-navy-700">Harga Pokok Penjualan</td><td class="py-2 text-right font-semibold text-navy-950">(Rp 291.430.000)</td></tr>
+                      <tr class="border-b border-navy-100 bg-navy-50/50"><td class="py-2 pl-2 font-semibold text-navy-900">Laba Kotor</td><td class="py-2 pr-2 text-right font-bold text-navy-950">Rp 186.680.000</td></tr>
+                      <tr class="border-b border-navy-50"><td class="py-2 text-navy-700">Beban Operasional</td><td class="py-2 text-right font-semibold text-navy-950">(Rp 98.320.000)</td></tr>
+                      <tr class="border-b border-navy-50"><td class="py-2 text-navy-700">Beban Pajak (PPh Final)</td><td class="py-2 text-right font-semibold text-navy-950">(Rp 14.240.000)</td></tr>
+                      <tr class="bg-accent-50"><td class="rounded-l-lg py-2.5 pl-2 font-bold text-navy-950">Laba Bersih</td><td class="rounded-r-lg py-2.5 pr-2 text-right text-base font-extrabold text-accent-700">Rp 74.120.000</td></tr>
+                    </tbody>
+                  </table>
+
+                  <div class="mt-4 grid grid-cols-3 gap-2">
+                    <div class="rounded-xl bg-navy-50 p-3 text-center"><p class="text-[11px] font-medium text-navy-500">Margin Kotor</p><p class="mt-0.5 text-sm font-extrabold text-navy-950">39,0%</p></div>
+                    <div class="rounded-xl bg-navy-50 p-3 text-center"><p class="text-[11px] font-medium text-navy-500">Margin Bersih</p><p class="mt-0.5 text-sm font-extrabold text-navy-950">15,5%</p></div>
+                    <div class="rounded-xl bg-navy-50 p-3 text-center"><p class="text-[11px] font-medium text-navy-500">vs Juli</p><p class="mt-0.5 text-sm font-extrabold text-accent-600">+18,4%</p></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-navy-100">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Laporan siap audit, tanpa tunggu akhir bulan</h3>
+                <p class="mt-3 text-sm leading-relaxed text-navy-200">
+                  Neraca, laba rugi, arus kas, dan buku besar tersusun otomatis mengikuti standar
+                  akuntansi Indonesia. Ekspor ke PDF atau Excel hanya butuh satu klik.
+                </p>
+                <ul class="mt-6 space-y-3 text-sm">
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> 40+ template laporan standar</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Perbandingan antar periode &amp; cabang</li>
+                  <li class="flex gap-2.5"><svg class="mt-0.5 flex-none" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#34d18b" stroke-width="2.6" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg> Audit trail setiap perubahan jurnal</li>
+                </ul>
+                <a href="features.html#reporting" class="btn btn-outline-light mt-7">Detail modul laporan</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================== TESTIMONI =========================== -->
+    <section class="py-20 sm:py-24" aria-labelledby="testimonial-heading">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center" data-reveal>
+          <span class="eyebrow">Kata Pengguna</span>
+          <h2 id="testimonial-heading" class="mt-4 text-3xl font-extrabold tracking-tight text-navy-950 sm:text-4xl">
+            Waktu pembukuan berkurang, keputusan bisnis makin cepat
+          </h2>
+        </div>
+
+        <div class="mt-14 grid gap-5 lg:grid-cols-3">
+
+          <figure class="card card-hover flex h-full flex-col p-6" data-reveal>
+            <div class="flex text-amber-400" aria-label="Rating 5 dari 5">
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-relaxed text-navy-700">
+              “Dulu tutup buku bulanan makan waktu dua minggu karena harus cocokkan stok dan kas satu per satu.
+              Sekarang laporan laba rugi sudah siap di tanggal 3. Saya bisa ambil keputusan harga jual jauh lebih cepat.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3 border-t border-navy-100 pt-5">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-navy-800 text-sm font-bold text-white">RA</span>
+              <span>
+                <span class="block text-sm font-bold text-navy-950">Rizky Amanda</span>
+                <span class="block text-xs text-navy-500">Owner, Nusantara Retail — Bandung</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="card card-hover flex h-full flex-col p-6" data-reveal data-reveal-delay="90">
+            <div class="flex text-amber-400" aria-label="Rating 5 dari 5">
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-relaxed text-navy-700">
+              “Selisih stok gudang yang tiap bulan bikin pusing akhirnya hilang. Kalkulasi HPP-nya akurat,
+              jadi kami tahu persis produk mana yang sebenarnya untung dan mana yang selama ini rugi tipis.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3 border-t border-navy-100 pt-5">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-accent-600 text-sm font-bold text-white">DS</span>
+              <span>
+                <span class="block text-sm font-bold text-navy-950">Dewi Setiawati</span>
+                <span class="block text-xs text-navy-500">Finance Manager, Mitra Farma — Surabaya</span>
+              </span>
+            </figcaption>
+          </figure>
+
+          <figure class="card card-hover flex h-full flex-col p-6" data-reveal data-reveal-delay="180">
+            <div class="flex text-amber-400" aria-label="Rating 5 dari 5">
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg width="17" height="17" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 14.9l-5.3 2.7 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            </div>
+            <blockquote class="mt-4 flex-1 text-[15px] leading-relaxed text-navy-700">
+              “Kami punya lima cabang dan dulu tiap cabang kirim laporan Excel sendiri-sendiri.
+              Sekarang semuanya masuk satu dashboard, dan hak akses tiap staf bisa diatur rapi.”
+            </blockquote>
+            <figcaption class="mt-6 flex items-center gap-3 border-t border-navy-100 pt-5">
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-navy-600 text-sm font-bold text-white">BS</span>
+              <span>
+                <span class="block text-sm font-bold text-navy-950">Bayu Sanjaya</span>
+                <span class="block text-xs text-navy-500">Direktur, KopiKita Group — Jakarta</span>
+              </span>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CTA BANNER ========================= -->
+    <section class="px-5 pb-20 sm:px-6 sm:pb-24 lg:px-8">
+      <div class="relative mx-auto max-w-7xl overflow-hidden rounded-4xl bg-navy-900 px-6 py-14 sm:px-12 sm:py-16 lg:px-16" data-reveal>
+        <div class="bg-grid-dark absolute inset-0" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-20 -top-24 h-72 w-72 rounded-full bg-accent-500/25 blur-3xl" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -bottom-28 -left-16 h-72 w-72 rounded-full bg-navy-500/40 blur-3xl" aria-hidden="true"></div>
+
+        <div class="relative grid items-center gap-8 lg:grid-cols-[1.4fr_1fr]">
+          <div>
+            <span class="eyebrow eyebrow-light">Mulai Hari Ini</span>
+            <h2 class="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">
+              Siap merapikan keuangan bisnis Anda hari ini?
+            </h2>
+            <p class="mt-4 max-w-xl text-base leading-relaxed text-navy-200">
+              Coba seluruh fitur AkunPro gratis selama 14 hari. Tim kami akan membantu migrasi data
+              dan melatih staf akuntansi Anda tanpa biaya tambahan.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3 sm:flex-row lg:flex-col">
+            <a href="contact.html" class="btn btn-primary btn-lg sm:flex-1 lg:flex-none">
+              Minta Demo Gratis
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#" data-wa-link data-wa-text="Halo AkunPro, saya tertarik mencoba gratis 14 hari. Boleh dijelaskan langkah awalnya?" class="btn btn-outline-light btn-lg sm:flex-1 lg:flex-none">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.58-.35z"/></svg>
+              Tanya via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="bg-navy-950 pt-16 text-navy-200">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="grid gap-10 pb-12 lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]">
+
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5" aria-label="AkunPro — beranda">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-white/10">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 19l5.2-14h5.6L20 19h-4l-1-3H9l-1 3H4z" fill="#12b76a"/>
+                <path d="M10.2 13h3.6L12 7.6 10.2 13z" fill="#0a1730"/>
+              </svg>
+            </span>
+            <span class="text-lg font-extrabold tracking-tight text-white">AkunPro</span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-navy-200/80">
+            Software akuntansi dan manajemen bisnis modern untuk UMKM hingga korporasi di Indonesia.
+            Rapikan pembukuan, percepat laporan, ambil keputusan dengan data.
+          </p>
+
+          <form class="mt-6 max-w-sm" data-newsletter novalidate>
+            <label for="footer-email" class="text-xs font-semibold uppercase tracking-wide text-navy-300">Tips akuntansi mingguan</label>
+            <div class="mt-2 flex gap-2">
+              <input id="footer-email" type="email" name="email" placeholder="email@perusahaan.com" required
+                     class="w-full rounded-xl border border-white/15 bg-white/5 px-3.5 py-2.5 text-sm text-white placeholder:text-navy-300/70 focus:border-accent-400 focus:outline-none focus:ring-4 focus:ring-accent-500/20">
+              <button type="submit" class="btn btn-primary btn-sm px-4">Kirim</button>
+            </div>
+            <p data-newsletter-note class="mt-2 text-sm" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Produk</h2>
+          <ul class="mt-4 space-y-2.5">
+            <li><a href="features.html#invoicing" class="footer-link">Smart Invoicing</a></li>
+            <li><a href="features.html#inventory" class="footer-link">Inventory &amp; HPP</a></li>
+            <li><a href="features.html#reporting" class="footer-link">Laporan Keuangan</a></li>
+            <li><a href="features.html#multi" class="footer-link">Multi-Cabang</a></li>
+            <li><a href="features.html#paket" class="footer-link">Perbandingan Paket</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Perusahaan</h2>
+          <ul class="mt-4 space-y-2.5">
+            <li><a href="about.html" class="footer-link">Tentang Kami</a></li>
+            <li><a href="about.html#keamanan" class="footer-link">Keamanan Data</a></li>
+            <li><a href="about.html#tim" class="footer-link">Tim Support</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Edukasi</a></li>
+            <li><a href="contact.html" class="footer-link">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Kontak</h2>
+          <ul class="mt-4 space-y-3 text-sm text-navy-200/80">
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Gedung Cyber 2, Lt. 15<br>Jl. HR Rasuna Said, Jakarta Selatan
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 015.5 3h1.7a1 1 0 01.96.73l.9 3.1a1 1 0 01-.4 1.1l-1.4 1a13 13 0 006.8 6.8l1-1.4a1 1 0 011.1-.4l3.1.9a1 1 0 01.73.96v1.7A2.5 2.5 0 0118.5 21 15.5 15.5 0 013 5.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="tel:+622150001234" class="hover:text-white">(021) 5000 1234</a>
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="mailto:halo@akunpro.id" class="hover:text-white">halo@akunpro.id</a>
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Senin–Jumat 08.00–17.00 WIB
+            </li>
+          </ul>
+
+          <div class="mt-5 flex gap-2">
+            <a href="#" class="social-btn" aria-label="Instagram AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 112.5 6 2.48 2.48 0 014.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05a4.2 4.2 0 013.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.46c0-1.3 0-2.98-1.82-2.98s-2.1 1.42-2.1 2.89V21h-4z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="YouTube AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.7a3 3 0 00-2.1-2.1C18.6 3.7 12 3.7 12 3.7s-6.6 0-8.4.5a3 3 0 00-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.7a3 3 0 002.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 002.1-2.1C23 15.9 23 12 23 12zM9.8 15.4V8.6l5.9 3.4z"/></svg></a>
+            <a href="#" data-wa-link data-wa-text="Halo AkunPro, saya menemukan kontak Anda dari footer website." class="social-btn" aria-label="WhatsApp AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-xs text-navy-300 sm:flex-row">
+        <p>&copy; <span data-current-year>2025</span> AkunPro. Seluruh hak cipta dilindungi.</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-white">Syarat &amp; Ketentuan</a>
+          <a href="#" class="hover:text-white">Perjanjian Lisensi</a>
+          <span class="flex items-center gap-1.5 text-accent-400">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 118 0v3" stroke-linecap="round"/></svg>
+            SSL 256-bit
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================== FLOATING WHATSAPP ====================== -->
+  <div class="wa-widget" data-wa-widget>
+    <div class="wa-bubble hidden" data-wa-bubble>
+      <p class="font-semibold text-navy-950">Butuh bantuan? 👋</p>
+      <p class="mt-0.5 text-navy-600">Tim konsultan kami siap menjawab dalam 5 menit.</p>
+    </div>
+
+    <div class="wa-panel" data-wa-panel role="dialog" aria-label="Konsultasi WhatsApp AkunPro">
+      <div class="flex items-start gap-3 bg-navy-950 px-4 py-3.5">
+        <span class="grid h-10 w-10 flex-none place-items-center rounded-full bg-accent-500 text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4z"/></svg>
+        </span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm font-bold text-white">Tim Konsultan AkunPro</p>
+          <p class="flex items-center gap-1.5 text-[11px] text-accent-300">
+            <span class="h-1.5 w-1.5 rounded-full bg-accent-400"></span> Online · balas cepat
+          </p>
+        </div>
+        <button type="button" data-wa-close class="rounded-lg p-1 text-white/60 transition hover:bg-white/10 hover:text-white" aria-label="Tutup panel WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="space-y-2 p-3.5">
+        <p class="px-1 pb-1 text-xs text-navy-500">Pilih topik agar kami langsung paham kebutuhan Anda:</p>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya ingin menjadwalkan demo produk untuk bisnis saya.">📅 Jadwalkan demo produk</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya ingin tahu detail harga dan paket lisensi yang tersedia.">💰 Tanya harga &amp; paket</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya butuh bantuan migrasi data pembukuan dari sistem lama.">📦 Bantuan migrasi data</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya pengguna aktif dan butuh dukungan teknis.">🛠️ Dukungan teknis</a>
+      </div>
+    </div>
+
+    <button type="button" class="wa-toggle" data-wa-toggle aria-expanded="false" aria-label="Buka konsultasi WhatsApp">
+      <svg class="wa-icon-chat" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.58-.35z"/></svg>
+      <svg class="wa-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

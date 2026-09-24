@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog &amp; Pusat Edukasi Akuntansi Bisnis — AkunPro</title>
+  <meta name="description" content="Artikel praktis seputar pajak bisnis, tips finansial, manajemen stok, dan tutorial software akuntansi. Ditulis tim konsultan AkunPro untuk pemilik usaha dan staf keuangan.">
+  <meta name="keywords" content="blog akuntansi, tips keuangan bisnis, pajak UMKM, manajemen stok, tutorial software akuntansi, arus kas">
+  <meta name="author" content="AkunPro">
+  <meta name="theme-color" content="#0a1730">
+  <link rel="canonical" href="https://akunpro.id/blog.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AkunPro">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:url" content="https://akunpro.id/blog.html">
+  <meta property="og:title" content="Blog &amp; Pusat Edukasi Akuntansi Bisnis — AkunPro">
+  <meta property="og:description" content="Panduan pajak, arus kas, HPP, dan tutorial pembukuan yang bisa langsung dipraktikkan bisnis Anda.">
+  <meta property="og:image" content="https://akunpro.id/assets/img/og-blog.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1730'/%3E%3Cpath d='M9 22l4.6-12h4.8L23 22h-3.6l-.9-2.6h-5l-.9 2.6H9zm5.4-5.3h3.2L16 12.1l-1.6 4.6z' fill='%2312b76a'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind.config.js"></script>
+  <link rel="stylesheet" href="assets/css/theme.css">
+</head>
+
+<body class="bg-white font-sans text-navy-900 antialiased">
+  <a href="#main" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header data-header class="site-header sticky top-0 z-50">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="flex h-[72px] items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-2.5 shrink-0" aria-label="AkunPro — beranda">
+          <span class="grid h-10 w-10 place-items-center rounded-xl bg-navy-950 shadow-soft">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 19l5.2-14h5.6L20 19h-4l-1-3H9l-1 3H4z" fill="#12b76a"/>
+              <path d="M10.2 13h3.6L12 7.6 10.2 13z" fill="#0a1730"/>
+            </svg>
+          </span>
+          <span class="leading-tight">
+            <span class="block text-lg font-extrabold tracking-tight text-navy-950">AkunPro</span>
+            <span class="block text-[11px] font-medium text-navy-500">Akuntansi &amp; Bisnis</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-1 lg:flex" aria-label="Navigasi utama">
+          <a href="index.html" data-nav-link class="nav-link">Beranda</a>
+          <a href="features.html" data-nav-link class="nav-link">Fitur</a>
+          <a href="about.html" data-nav-link class="nav-link">Tentang Kami</a>
+          <a href="blog.html" data-nav-link class="nav-link">Blog</a>
+          <a href="contact.html" data-nav-link class="nav-link">Kontak</a>
+        </nav>
+
+        <div class="hidden items-center gap-2 lg:flex">
+          <a href="#artikel" class="btn btn-ghost btn-sm">Semua Artikel</a>
+          <a href="contact.html" class="btn btn-primary btn-sm">Coba Gratis 14 Hari</a>
+        </div>
+
+        <button type="button" data-menu-toggle class="menu-toggle lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" data-mobile-menu class="mobile-menu bg-white lg:hidden">
+      <div class="mx-auto max-w-7xl px-5 pb-6 pt-2 sm:px-6">
+        <nav aria-label="Navigasi mobile">
+          <a href="index.html" data-nav-link class="mobile-link">Beranda <span aria-hidden="true">→</span></a>
+          <a href="features.html" data-nav-link class="mobile-link">Fitur <span aria-hidden="true">→</span></a>
+          <a href="about.html" data-nav-link class="mobile-link">Tentang Kami <span aria-hidden="true">→</span></a>
+          <a href="blog.html" data-nav-link class="mobile-link">Blog <span aria-hidden="true">→</span></a>
+          <a href="contact.html" data-nav-link class="mobile-link">Kontak <span aria-hidden="true">→</span></a>
+        </nav>
+        <div class="mt-5 grid gap-2.5">
+          <a href="contact.html" class="btn btn-primary btn-block">Coba Gratis 14 Hari</a>
+          <a href="#artikel" class="btn btn-outline btn-block">Lihat Semua Artikel</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ========================== PAGE HERO ========================== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-navy-50 to-white">
+      <div class="bg-grid mask-fade-b absolute inset-0" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -right-28 -top-20 h-80 w-80 rounded-full bg-accent-200/35 blur-3xl" aria-hidden="true"></div>
+
+      <div class="relative mx-auto max-w-7xl px-5 py-14 sm:px-6 lg:px-8 lg:py-20">
+        <nav class="mb-6 flex items-center gap-2 text-xs font-medium text-navy-500" aria-label="Breadcrumb">
+          <a href="index.html" class="hover:text-navy-900">Beranda</a>
+          <span aria-hidden="true">/</span>
+          <span class="text-navy-900">Blog</span>
+        </nav>
+
+        <div class="max-w-3xl" data-reveal>
+          <span class="eyebrow">Pusat Edukasi</span>
+          <h1 class="mt-5 text-[2rem] font-extrabold leading-[1.13] tracking-tight text-navy-950 sm:text-5xl">
+            Belajar akuntansi bisnis tanpa jargon yang bikin pusing
+          </h1>
+          <p class="mt-5 text-base leading-relaxed text-navy-700/90 sm:text-lg">
+            Panduan praktis seputar pajak, arus kas, persediaan, dan pembukuan — ditulis tim konsultan
+            kami dari kasus nyata yang sering ditemui klien di lapangan.
+          </p>
+        </div>
+
+        <!-- Pencarian & filter -->
+        <div class="mt-10" data-reveal data-reveal-delay="100">
+          <div class="relative max-w-xl">
+            <label for="blog-search" class="sr-only">Cari artikel</label>
+            <span class="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-navy-400" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+            </span>
+            <input id="blog-search" type="search" data-blog-search placeholder="Cari topik: PPN, arus kas, HPP, stok opname…"
+                   class="field-input !rounded-2xl !py-3.5 !pl-12 !pr-4 shadow-soft" autocomplete="off">
+          </div>
+
+          <div class="mt-5 flex flex-wrap items-center gap-2" role="group" aria-label="Filter kategori artikel">
+            <button type="button" class="pill is-active" data-filter="semua" aria-pressed="true">Semua Topik</button>
+            <button type="button" class="pill" data-filter="pajak" aria-pressed="false">
+              <span class="h-2 w-2 rounded-full bg-rose-400" aria-hidden="true"></span> Pajak
+            </button>
+            <button type="button" class="pill" data-filter="finansial" aria-pressed="false">
+              <span class="h-2 w-2 rounded-full bg-accent-500" aria-hidden="true"></span> Tips Finansial
+            </button>
+            <button type="button" class="pill" data-filter="stok" aria-pressed="false">
+              <span class="h-2 w-2 rounded-full bg-amber-400" aria-hidden="true"></span> Manajemen Stok
+            </button>
+            <button type="button" class="pill" data-filter="tutorial" aria-pressed="false">
+              <span class="h-2 w-2 rounded-full bg-navy-500" aria-hidden="true"></span> Tutorial
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= DAFTAR ARTIKEL ========================= -->
+    <section id="artikel" class="scroll-mt-24 py-14 sm:py-16 lg:py-20" aria-labelledby="artikel-heading">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <h2 id="artikel-heading" class="sr-only">Daftar artikel</h2>
+
+        <div class="grid gap-10 lg:grid-cols-[1fr_20rem] lg:gap-12">
+
+          <!-- Kolom artikel -->
+          <div>
+            <div class="mb-6 flex items-center justify-between gap-4">
+              <p class="text-sm font-medium text-navy-500" data-blog-count role="status" aria-live="polite">Menampilkan seluruh 4 artikel</p>
+              <button type="button" data-blog-clear class="text-sm font-semibold text-accent-600 hover:text-accent-700">Atur ulang filter</button>
+            </div>
+
+            <div class="grid gap-6 sm:grid-cols-2" data-blog-list>
+
+              <!-- ---------------- Artikel 1 — Pajak ---------------- -->
+              <article class="card card-hover flex flex-col overflow-hidden" data-article-card
+                       data-category="pajak"
+                       data-category-label="Pajak"
+                       data-title="Cara Menghitung PPN Keluaran dan Masukan Tanpa Salah Hitung"
+                       data-meta="12 September 2025 · 7 menit baca · Siti Prameswari"
+                       data-keywords="ppn pajak pkp faktur pajak keluaran masukan kredit pajak djp e-faktur">
+
+                <div class="relative h-40 overflow-hidden bg-gradient-to-br from-rose-500 to-rose-700">
+                  <svg class="absolute inset-0 h-full w-full opacity-20" viewBox="0 0 400 160" fill="none" aria-hidden="true">
+                    <circle cx="340" cy="20" r="80" fill="#fff"/>
+                    <circle cx="60" cy="150" r="60" fill="#fff"/>
+                  </svg>
+                  <span class="absolute left-4 top-4 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-rose-700">Pajak</span>
+                  <span class="absolute bottom-4 left-4 text-white/95">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 15l6-6M9.5 9.5h.01m4.99 5h.01M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+
+                <div class="flex flex-1 flex-col p-6">
+                  <div class="flex items-center gap-2 text-xs font-medium text-navy-500">
+                    <time datetime="2025-09-12">12 Sep 2025</time>
+                    <span class="divider-dot" aria-hidden="true"></span>
+                    <span class="flex items-center gap-1">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      7 menit baca
+                    </span>
+                  </div>
+
+                  <h3 class="mt-3 text-lg font-bold leading-snug tracking-tight text-navy-950">
+                    Cara Menghitung PPN Keluaran dan Masukan Tanpa Salah Hitung
+                  </h3>
+                  <p class="mt-2.5 flex-1 text-sm leading-relaxed text-navy-600">
+                    Banyak PKP baru keliru membedakan pajak keluaran dan masukan, lalu menyetor lebih
+                    besar dari seharusnya. Ini alur perhitungan yang benar beserta contoh kasusnya.
+                  </p>
+
+                  <button type="button" data-article-open class="mt-5 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-accent-600 hover:text-accent-700">
+                    Baca artikel
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+
+                <template data-article-body>
+                  <p><strong>Ringkasnya:</strong> PPN yang Anda setor ke negara bukanlah seluruh pajak yang Anda pungut dari pelanggan, melainkan selisih antara pajak keluaran dan pajak masukan. Kesalahan memahami dua istilah ini adalah penyebab paling sering lebih bayar pada UMKM yang baru dikukuhkan sebagai PKP.</p>
+
+                  <h3>Membedakan pajak keluaran dan pajak masukan</h3>
+                  <p><strong>Pajak keluaran</strong> adalah PPN yang Anda pungut saat menjual barang atau jasa kena pajak. Angka ini muncul di faktur pajak yang Anda terbitkan untuk pelanggan.</p>
+                  <p><strong>Pajak masukan</strong> adalah PPN yang Anda bayar saat membeli barang atau jasa dari pemasok yang juga PKP. Angka ini tercantum di faktur pajak yang Anda terima.</p>
+                  <blockquote>PPN terutang = Pajak Keluaran − Pajak Masukan yang dapat dikreditkan</blockquote>
+
+                  <h3>Contoh perhitungan satu masa pajak</h3>
+                  <p>Misalkan pada satu masa pajak, sebuah distributor mencatat transaksi berikut (tarif PPN 11% sebagai ilustrasi — sesuaikan dengan tarif yang berlaku saat Anda membaca):</p>
+                  <table>
+                    <thead>
+                      <tr><th>Keterangan</th><th>Dasar Pengenaan Pajak</th><th>PPN</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Penjualan ke pelanggan</td><td>Rp 400.000.000</td><td>Rp 44.000.000</td></tr>
+                      <tr><td>Pembelian dari pemasok PKP</td><td>Rp 290.000.000</td><td>Rp 31.900.000</td></tr>
+                      <tr><td><strong>PPN kurang bayar</strong></td><td>—</td><td><strong>Rp 12.100.000</strong></td></tr>
+                    </tbody>
+                  </table>
+                  <p>Yang disetor ke kas negara hanya Rp 12.100.000 — bukan Rp 44.000.000. Selisih inilah yang sering terlewat ketika pencatatan pembelian tidak rapi.</p>
+
+                  <h3>Tiga kesalahan yang paling sering terjadi</h3>
+                  <ol>
+                    <li><strong>Faktur pajak masukan tidak dikumpulkan.</strong> Setiap faktur yang hilang berarti hak kredit pajak yang hangus. Simpan digital sejak hari transaksi, bukan menjelang pelaporan.</li>
+                    <li><strong>Mengkreditkan pajak masukan yang tidak berhak.</strong> Pembelian untuk keperluan pribadi pemilik atau dari pemasok non-PKP tidak dapat dikreditkan.</li>
+                    <li><strong>Terlambat menerbitkan faktur pajak.</strong> Faktur yang terlambat berpotensi kena sanksi administrasi, dan bagi pembeli bisa menghilangkan hak kreditnya.</li>
+                  </ol>
+
+                  <h3>Menyiapkan pencatatan agar pelaporan tidak menegangkan</h3>
+                  <p>Kunci pelaporan yang tenang bukan pada kecepatan mengerjakan di akhir bulan, melainkan pada disiplin harian:</p>
+                  <ul>
+                    <li>Catat setiap transaksi beserta status PPN-nya pada hari yang sama.</li>
+                    <li>Pisahkan akun PPN keluaran dan PPN masukan di buku besar sejak awal.</li>
+                    <li>Lakukan rekonsiliasi bulanan antara omzet di laporan laba rugi dengan total DPP di daftar faktur pajak.</li>
+                    <li>Ekspor data ke format yang siap diunggah ke aplikasi e-Faktur, jangan mengetik ulang.</li>
+                  </ul>
+
+                  <h4>Bagaimana AkunPro membantu</h4>
+                  <p>Setiap invoice yang Anda terbitkan otomatis menghitung PPN dan membukukannya ke akun pajak keluaran. Pembelian dari pemasok PKP masuk ke akun pajak masukan. Menjelang pelaporan, Anda cukup membuka satu laporan rekapitulasi dan mengekspornya — angka kurang atau lebih bayar sudah terhitung.</p>
+                  <p><em>Catatan: artikel ini bersifat edukasi umum dan bukan nasihat perpajakan. Konsultasikan kondisi spesifik perusahaan Anda dengan konsultan pajak terdaftar.</em></p>
+                </template>
+              </article>
+
+              <!-- ---------------- Artikel 2 — Tips Finansial ---------------- -->
+              <article class="card card-hover flex flex-col overflow-hidden" data-article-card
+                       data-category="finansial"
+                       data-category-label="Tips Finansial"
+                       data-title="7 Tanda Arus Kas Bisnis Anda Sedang Tidak Sehat"
+                       data-meta="5 September 2025 · 6 menit baca · Andini Kusuma"
+                       data-keywords="arus kas cash flow likuiditas piutang modal kerja keuangan sehat">
+
+                <div class="relative h-40 overflow-hidden bg-gradient-to-br from-accent-500 to-accent-700">
+                  <svg class="absolute inset-0 h-full w-full opacity-20" viewBox="0 0 400 160" fill="none" aria-hidden="true">
+                    <path d="M0 120 L80 90 L160 110 L240 60 L320 75 L400 30 L400 160 L0 160Z" fill="#fff"/>
+                  </svg>
+                  <span class="absolute left-4 top-4 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-accent-700">Tips Finansial</span>
+                  <span class="absolute bottom-4 left-4 text-white/95">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 7h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+
+                <div class="flex flex-1 flex-col p-6">
+                  <div class="flex items-center gap-2 text-xs font-medium text-navy-500">
+                    <time datetime="2025-09-05">5 Sep 2025</time>
+                    <span class="divider-dot" aria-hidden="true"></span>
+                    <span class="flex items-center gap-1">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      6 menit baca
+                    </span>
+                  </div>
+
+                  <h3 class="mt-3 text-lg font-bold leading-snug tracking-tight text-navy-950">
+                    7 Tanda Arus Kas Bisnis Anda Sedang Tidak Sehat
+                  </h3>
+                  <p class="mt-2.5 flex-1 text-sm leading-relaxed text-navy-600">
+                    Laba di laporan bukan jaminan kas di rekening. Kenali gejala awal masalah likuiditas
+                    sebelum bisnis Anda kesulitan membayar kewajiban rutin.
+                  </p>
+
+                  <button type="button" data-article-open class="mt-5 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-accent-600 hover:text-accent-700">
+                    Baca artikel
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+
+                <template data-article-body>
+                  <p>Banyak bisnis tutup bukan karena merugi, melainkan karena kehabisan kas. Laba di laporan laba rugi adalah angka akrual — ia mengakui pendapatan saat barang dikirim, bukan saat uang benar-benar masuk. Selisih waktu inilah yang diam-diam mencekik banyak usaha yang sebenarnya sedang bertumbuh.</p>
+
+                  <h3>Tujuh gejala yang perlu diwaspadai</h3>
+                  <ol>
+                    <li><strong>Umur piutang terus memanjang.</strong> Jika rata-rata pelanggan dulu membayar 30 hari dan kini 55 hari, modal kerja Anda sedang dipakai membiayai bisnis orang lain.</li>
+                    <li><strong>Gaji karyawan mulai bergantung pada satu pembayaran tertentu.</strong> Ini tanda bantalan kas sudah terlalu tipis.</li>
+                    <li><strong>Persediaan menumpuk lebih cepat daripada penjualan.</strong> Setiap rupiah di gudang adalah rupiah yang tidak bisa dipakai membayar tagihan.</li>
+                    <li><strong>Sering menunda pembayaran ke pemasok.</strong> Selain merusak relasi, Anda kehilangan diskon pembayaran cepat.</li>
+                    <li><strong>Laba naik tetapi saldo bank turun.</strong> Gejala klasik pertumbuhan yang tidak didanai dengan benar.</li>
+                    <li><strong>Menggunakan fasilitas pinjaman jangka pendek untuk biaya rutin.</strong> Utang jangka pendek seharusnya membiayai aset lancar, bukan gaji bulanan.</li>
+                    <li><strong>Tidak tahu posisi kas hari ini tanpa membuka spreadsheet.</strong> Ketidaktahuan itu sendiri adalah risikonya.</li>
+                  </ol>
+
+                  <h3>Tiga langkah perbaikan yang berdampak cepat</h3>
+                  <h4>1. Perpendek siklus penagihan</h4>
+                  <p>Kirim faktur pada hari yang sama barang dikirim, bukan menunggu akhir bulan. Aktifkan pengingat otomatis H-3 sebelum jatuh tempo. Perubahan sederhana ini sering memangkas umur piutang 7–10 hari.</p>
+
+                  <h4>2. Susun proyeksi kas 13 minggu</h4>
+                  <p>Bukan proyeksi tahunan yang muluk, melainkan 13 minggu ke depan berisi penerimaan dan pengeluaran yang sudah pasti. Perbarui setiap Senin. Ini alat paling praktis untuk melihat minggu mana yang akan seret.</p>
+
+                  <h4>3. Pisahkan uang pajak sejak awal</h4>
+                  <p>Sisihkan porsi PPN dan PPh ke rekening terpisah begitu diterima. Uang pajak bukan milik perusahaan, dan memakainya sebagai modal kerja adalah masalah yang tertunda.</p>
+
+                  <blockquote>Aturan praktis: siapkan bantalan kas minimal setara tiga bulan biaya operasional tetap sebelum melakukan ekspansi.</blockquote>
+
+                  <h3>Memantau tanpa repot</h3>
+                  <p>Dashboard arus kas AkunPro menampilkan saldo seluruh rekening, piutang yang akan jatuh tempo, dan utang yang harus dibayar dalam satu layar — diperbarui setiap kali transaksi dicatat. Proyeksi 30 hari ke depan tersusun otomatis dari jadwal jatuh tempo yang sudah ada di sistem.</p>
+                </template>
+              </article>
+
+              <!-- ---------------- Artikel 3 — Manajemen Stok ---------------- -->
+              <article class="card card-hover flex flex-col overflow-hidden" data-article-card
+                       data-category="stok"
+                       data-category-label="Manajemen Stok"
+                       data-title="FIFO atau Average? Memilih Metode HPP yang Tepat untuk Bisnis Anda"
+                       data-meta="28 Agustus 2025 · 9 menit baca · Fajar Hidayat"
+                       data-keywords="hpp fifo average persediaan inventory costing harga pokok penjualan gudang stok opname">
+
+                <div class="relative h-40 overflow-hidden bg-gradient-to-br from-amber-400 to-amber-600">
+                  <svg class="absolute inset-0 h-full w-full opacity-20" viewBox="0 0 400 160" fill="none" aria-hidden="true">
+                    <rect x="30" y="70" width="70" height="90" fill="#fff"/>
+                    <rect x="120" y="40" width="70" height="120" fill="#fff"/>
+                    <rect x="210" y="90" width="70" height="70" fill="#fff"/>
+                    <rect x="300" y="20" width="70" height="140" fill="#fff"/>
+                  </svg>
+                  <span class="absolute left-4 top-4 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-amber-700">Manajemen Stok</span>
+                  <span class="absolute bottom-4 left-4 text-white/95">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </div>
+
+                <div class="flex flex-1 flex-col p-6">
+                  <div class="flex items-center gap-2 text-xs font-medium text-navy-500">
+                    <time datetime="2025-08-28">28 Ags 2025</time>
+                    <span class="divider-dot" aria-hidden="true"></span>
+                    <span class="flex items-center gap-1">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      9 menit baca
+                    </span>
+                  </div>
+
+                  <h3 class="mt-3 text-lg font-bold leading-snug tracking-tight text-navy-950">
+                    FIFO atau Average? Memilih Metode HPP yang Tepat untuk Bisnis Anda
+                  </h3>
+                  <p class="mt-2.5 flex-1 text-sm leading-relaxed text-navy-600">
+                    Pilihan metode penilaian persediaan langsung memengaruhi laba yang Anda laporkan.
+                    Ini panduan memilihnya berdasarkan karakter barang dagangan Anda.
+                  </p>
+
+                  <button type="button" data-article-open class="mt-5 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-accent-600 hover:text-accent-700">
+                    Baca artikel
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+
+                <template data-article-body>
+                  <p>Harga pokok penjualan (HPP) adalah angka yang menentukan apakah Anda benar-benar untung. Sayangnya, HPP bukan angka tunggal yang objektif — ia bergantung pada metode penilaian persediaan yang Anda pilih. Dua yang paling umum dipakai di Indonesia adalah FIFO dan Average.</p>
+
+                  <h3>FIFO: barang yang masuk lebih dulu, keluar lebih dulu</h3>
+                  <p>Metode <em>First In First Out</em> mengasumsikan barang yang pertama dibeli adalah yang pertama dijual. Nilai persediaan sisa karenanya mencerminkan harga pembelian terbaru.</p>
+                  <ul>
+                    <li><strong>Cocok untuk:</strong> barang dengan masa kedaluwarsa, produk bermusim, elektronik yang cepat turun harga.</li>
+                    <li><strong>Efek saat harga naik:</strong> HPP lebih rendah, laba tercatat lebih tinggi, pajak yang terutang juga lebih besar.</li>
+                    <li><strong>Konsekuensi operasional:</strong> Anda perlu mencatat setiap lapisan pembelian beserta harganya.</li>
+                  </ul>
+
+                  <h3>Average: seluruh pembelian dirata-rata</h3>
+                  <p>Metode rata-rata tertimbang menghitung ulang harga pokok setiap kali ada pembelian baru, menghasilkan satu harga rata-rata untuk seluruh unit.</p>
+                  <ul>
+                    <li><strong>Cocok untuk:</strong> barang homogen seperti bahan baku curah, BBM, semen, beras, atau komponen yang tidak dibedakan per batch.</li>
+                    <li><strong>Efek saat harga fluktuatif:</strong> laba lebih stabil antar periode karena lonjakan harga terserap ke rata-rata.</li>
+                    <li><strong>Konsekuensi operasional:</strong> lebih sederhana dicatat, tetapi nilai persediaan tidak mencerminkan harga pasar terkini.</li>
+                  </ul>
+
+                  <h3>Perbandingan dengan angka nyata</h3>
+                  <p>Sebuah toko membeli 100 unit @Rp 10.000, lalu 100 unit @Rp 14.000. Kemudian menjual 120 unit:</p>
+                  <table>
+                    <thead>
+                      <tr><th>Metode</th><th>HPP 120 unit</th><th>Nilai sisa 80 unit</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>FIFO</td><td>Rp 1.280.000</td><td>Rp 1.120.000</td></tr>
+                      <tr><td>Average (Rp 12.000/unit)</td><td>Rp 1.440.000</td><td>Rp 960.000</td></tr>
+                    </tbody>
+                  </table>
+                  <p>Selisih HPP Rp 160.000 dari transaksi sekecil ini. Kalikan dengan ribuan transaksi setahun, dan Anda akan melihat mengapa pilihan metode bukan perkara sepele.</p>
+
+                  <h3>Cara memilih</h3>
+                  <ol>
+                    <li>Perhatikan sifat barang: jika perlu ditelusuri per batch atau punya tanggal kedaluwarsa, pilih FIFO.</li>
+                    <li>Pertimbangkan volatilitas harga beli: jika harga sering berfluktuasi tajam, Average memberi laba yang lebih stabil untuk dibaca manajemen.</li>
+                    <li>Diskusikan dengan akuntan atau konsultan pajak Anda, karena konsistensi metode wajib dijaga antar periode.</li>
+                  </ol>
+
+                  <blockquote>Apa pun yang dipilih, konsistensi lebih penting daripada kesempurnaan. Berganti metode di tengah tahun buku membuat laporan Anda sulit dibandingkan.</blockquote>
+
+                  <h4>Menerapkannya di AkunPro</h4>
+                  <p>Metode HPP diatur satu kali pada pengaturan persediaan, lalu sistem menghitung otomatis setiap kali barang keluar. Kartu stok per SKU menampilkan lapisan harga pembelian sehingga Anda bisa menelusuri asal setiap angka saat audit.</p>
+                </template>
+              </article>
+
+              <!-- ---------------- Artikel 4 — Tutorial ---------------- -->
+              <article class="card card-hover flex flex-col overflow-hidden" data-article-card
+                       data-category="tutorial"
+                       data-category-label="Tutorial"
+                       data-title="Tutorial: Menyiapkan Saldo Awal dan Struktur Akun di Hari Pertama"
+                       data-meta="21 Agustus 2025 · 5 menit baca · Tim AkunPro"
+                       data-keywords="tutorial saldo awal chart of account struktur akun migrasi setup pembukuan awal">
+
+                <div class="relative h-40 overflow-hidden bg-gradient-to-br from-navy-700 to-navy-950">
+                  <svg class="absolute inset-0 h-full w-full opacity-20" viewBox="0 0 400 160" fill="none" aria-hidden="true">
+                    <rect x="40" y="30" width="150" height="12" rx="6" fill="#fff"/>
+                    <rect x="40" y="62" width="220" height="12" rx="6" fill="#fff"/>
+                    <rect x="40" y="94" width="180" height="12" rx="6" fill="#fff"/>
+                    <rect x="40" y="126" width="120" height="12" rx="6" fill="#fff"/>
+                  </svg>
+                  <span class="absolute left-4 top-4 rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-navy-800">Tutorial</span>
+                  <span class="absolute bottom-4 left-4 text-white/95">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 016.5 3H18a2 2 0 012 2v14a2 2 0 01-2 2H6.5A2.5 2.5 0 014 18.5v-13z" stroke-linejoin="round"/><path d="M8 7.5h7M8 11h7M8 14.5h4" stroke-linecap="round"/></svg>
+                  </span>
+                </div>
+
+                <div class="flex flex-1 flex-col p-6">
+                  <div class="flex items-center gap-2 text-xs font-medium text-navy-500">
+                    <time datetime="2025-08-21">21 Ags 2025</time>
+                    <span class="divider-dot" aria-hidden="true"></span>
+                    <span class="flex items-center gap-1">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                      5 menit baca
+                    </span>
+                  </div>
+
+                  <h3 class="mt-3 text-lg font-bold leading-snug tracking-tight text-navy-950">
+                    Tutorial: Menyiapkan Saldo Awal dan Struktur Akun di Hari Pertama
+                  </h3>
+                  <p class="mt-2.5 flex-1 text-sm leading-relaxed text-navy-600">
+                    Migrasi dari Excel ke software akuntansi jadi berantakan kalau fondasinya salah.
+                    Ikuti lima langkah ini agar pembukuan Anda bersih sejak awal.
+                  </p>
+
+                  <button type="button" data-article-open class="mt-5 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-accent-600 hover:text-accent-700">
+                    Baca artikel
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14m-6-6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+
+                <template data-article-body>
+                  <p>Hari pertama memakai software akuntansi menentukan kualitas laporan Anda selama bertahun-tahun ke depan. Kalau saldo awal salah, seluruh neraca akan timpang dan Anda akan menghabiskan waktu berbulan-bulan mencari selisihnya. Berikut urutan yang kami pakai saat mendampingi klien baru.</p>
+
+                  <h3>Langkah 1 — Tentukan tanggal cut-off</h3>
+                  <p>Pilih satu tanggal sebagai batas: transaksi sebelum tanggal itu diringkas menjadi saldo awal, transaksi setelahnya dicatat penuh di sistem baru. Awal bulan atau awal tahun buku adalah pilihan paling rapi. Jangan mencampur dua sistem berjalan bersamaan lebih dari satu periode.</p>
+
+                  <h3>Langkah 2 — Susun struktur akun (chart of accounts)</h3>
+                  <p>Gunakan struktur standar sebagai kerangka, lalu sesuaikan seperlunya:</p>
+                  <ul>
+                    <li><strong>1-xxxx Aset</strong> — kas, bank, piutang usaha, persediaan, aset tetap</li>
+                    <li><strong>2-xxxx Liabilitas</strong> — utang usaha, utang pajak, utang bank</li>
+                    <li><strong>3-xxxx Ekuitas</strong> — modal disetor, laba ditahan</li>
+                    <li><strong>4-xxxx Pendapatan</strong> — penjualan barang, pendapatan jasa</li>
+                    <li><strong>5-xxxx Beban Pokok</strong> — HPP, biaya angkut pembelian</li>
+                    <li><strong>6-xxxx Beban Operasional</strong> — gaji, sewa, listrik, pemasaran</li>
+                  </ul>
+                  <blockquote>Godaan terbesar pemula adalah membuat terlalu banyak akun. Mulailah seramping mungkin — akun selalu bisa ditambah, tetapi menggabungkan akun yang sudah dipakai jauh lebih merepotkan.</blockquote>
+
+                  <h3>Langkah 3 — Masukkan saldo awal neraca</h3>
+                  <p>Ambil neraca per tanggal cut-off dari pembukuan lama Anda, lalu input saldo tiap akun. Pastikan total debit sama dengan total kredit sebelum lanjut. Jika belum seimbang, jangan dipaksakan dengan akun penyeimbang — cari dulu penyebabnya.</p>
+
+                  <h3>Langkah 4 — Input data induk</h3>
+                  <p>Siapkan empat daftar berikut dalam format spreadsheet sebelum mengimpor:</p>
+                  <ol>
+                    <li>Daftar pelanggan beserta saldo piutang yang belum tertagih per faktur.</li>
+                    <li>Daftar pemasok beserta saldo utang yang belum dibayar.</li>
+                    <li>Daftar barang dengan kode SKU, satuan, dan harga jual.</li>
+                    <li>Saldo stok awal per SKU beserta nilai persediaannya.</li>
+                  </ol>
+                  <p>Detail piutang dan utang per faktur penting — bukan sekadar total — agar pelunasan nanti bisa dicocokkan satu per satu.</p>
+
+                  <h3>Langkah 5 — Verifikasi sebelum go-live</h3>
+                  <p>Sebelum tim mulai bertransaksi, cocokkan tiga hal ini dengan pembukuan lama:</p>
+                  <ul>
+                    <li>Total aset, liabilitas, dan ekuitas pada neraca awal.</li>
+                    <li>Total nilai persediaan terhadap laporan stok gudang.</li>
+                    <li>Total piutang dan utang terhadap daftar rincian per pelanggan/pemasok.</li>
+                  </ul>
+                  <p>Jika ketiganya cocok, Anda siap go-live. Tim implementasi AkunPro melakukan verifikasi ini bersama Anda tanpa biaya tambahan pada masa onboarding.</p>
+                </template>
+              </article>
+
+            </div>
+
+            <!-- Status kosong -->
+            <div class="hidden rounded-2xl border border-dashed border-navy-200 bg-navy-50/50 px-6 py-14 text-center" data-blog-empty>
+              <span class="mx-auto grid h-12 w-12 place-items-center rounded-full bg-white text-navy-400 shadow-soft">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21" stroke-linecap="round"/></svg>
+              </span>
+              <p class="mt-4 text-base font-bold text-navy-950">Artikel tidak ditemukan</p>
+              <p class="mx-auto mt-1.5 max-w-sm text-sm text-navy-600">
+                Coba kata kunci lain, atau atur ulang filter untuk melihat seluruh artikel yang tersedia.
+              </p>
+              <button type="button" data-blog-clear class="btn btn-outline btn-sm mt-5">Atur ulang filter</button>
+            </div>
+
+            <!-- Info arsip -->
+            <p class="mt-8 text-center text-sm text-navy-500">
+              Artikel baru terbit setiap dua minggu. Ingin topik tertentu dibahas?
+              <a href="contact.html" class="font-semibold text-accent-600 hover:text-accent-700">Kirim usulan Anda</a>.
+            </p>
+          </div>
+
+          <!-- Sidebar sticky -->
+          <aside class="lg:sticky lg:top-24 lg:self-start" aria-label="Informasi tambahan blog">
+            <div class="space-y-5">
+
+              <div class="card p-6" data-reveal>
+                <h2 class="text-base font-bold tracking-tight text-navy-950">Topik populer</h2>
+                <ul class="mt-4 space-y-3">
+                  <li class="flex items-start gap-3">
+                    <span class="text-sm font-extrabold text-navy-200">01</span>
+                    <span class="text-sm font-medium leading-snug text-navy-700">Menyiapkan laporan keuangan untuk pengajuan kredit bank</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-sm font-extrabold text-navy-200">02</span>
+                    <span class="text-sm font-medium leading-snug text-navy-700">Beda kas kecil, kas besar, dan rekening operasional</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-sm font-extrabold text-navy-200">03</span>
+                    <span class="text-sm font-medium leading-snug text-navy-700">Checklist stock opname akhir tahun untuk toko retail</span>
+                  </li>
+                  <li class="flex items-start gap-3">
+                    <span class="text-sm font-extrabold text-navy-200">04</span>
+                    <span class="text-sm font-medium leading-snug text-navy-700">Kapan UMKM sebaiknya mulai dikukuhkan sebagai PKP?</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="relative overflow-hidden rounded-2xl bg-navy-950 p-6 text-white" data-reveal data-reveal-delay="90">
+                <div class="bg-grid-dark absolute inset-0" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute -right-14 -top-14 h-40 w-40 rounded-full bg-accent-500/25 blur-2xl" aria-hidden="true"></div>
+                <div class="relative">
+                  <span class="eyebrow eyebrow-light">Coba Gratis</span>
+                  <h2 class="mt-4 text-lg font-bold leading-snug tracking-tight">
+                    Praktikkan langsung di AkunPro
+                  </h2>
+                  <p class="mt-2.5 text-sm leading-relaxed text-navy-200">
+                    Semua yang Anda baca di sini bisa dicoba gratis 14 hari — lengkap dengan pendampingan
+                    tim konsultan kami.
+                  </p>
+                  <a href="contact.html" class="btn btn-primary btn-sm mt-5 w-full">Mulai Uji Coba Gratis</a>
+                  <a href="#" data-wa-link data-wa-text="Halo AkunPro, saya membaca artikel di blog dan ingin bertanya lebih lanjut." class="btn btn-outline-light btn-sm mt-2 w-full">Tanya via WhatsApp</a>
+                </div>
+              </div>
+
+              <div class="card p-6" data-reveal data-reveal-delay="180">
+                <h2 class="text-base font-bold tracking-tight text-navy-950">Newsletter mingguan</h2>
+                <p class="mt-2 text-sm leading-relaxed text-navy-600">
+                  Satu email setiap Jumat berisi tips pembukuan dan pengingat tenggat pajak. Bisa berhenti kapan saja.
+                </p>
+                <form class="mt-4" data-newsletter novalidate>
+                  <label for="sidebar-email" class="sr-only">Alamat email</label>
+                  <input id="sidebar-email" type="email" name="email" placeholder="email@perusahaan.com" required class="field-input">
+                  <button type="submit" class="btn btn-navy btn-sm mt-2.5 w-full">Berlangganan</button>
+                  <p data-newsletter-note class="mt-2 text-sm" role="status" aria-live="polite"></p>
+                </form>
+              </div>
+
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== MODAL ARTIKEL TUNGGAL ===================== -->
+  <div class="modal hidden" data-article-modal role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay" data-modal-overlay></div>
+
+    <div class="modal-dialog">
+      <!-- Header modal -->
+      <div class="flex items-start gap-4 border-b border-navy-100 px-5 py-4 sm:px-7 sm:py-5">
+        <div class="min-w-0 flex-1">
+          <span class="chip bg-accent-50 text-accent-700" data-modal-category>Kategori</span>
+          <h2 id="modal-title" class="mt-2.5 text-xl font-extrabold leading-snug tracking-tight text-navy-950 sm:text-2xl" data-modal-title>Judul artikel</h2>
+          <p class="mt-1.5 text-xs font-medium text-navy-500" data-modal-meta>Tanggal · waktu baca · penulis</p>
+        </div>
+        <button type="button" data-modal-close class="grid h-9 w-9 flex-none place-items-center rounded-xl border border-navy-100 text-navy-500 transition hover:bg-navy-50 hover:text-navy-900" aria-label="Tutup artikel">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <!-- Isi artikel -->
+      <div class="article-body flex-1 overflow-y-auto px-5 py-6 sm:px-7 sm:py-7" data-modal-body></div>
+
+      <!-- Footer modal -->
+      <div class="flex flex-col gap-3 border-t border-navy-100 bg-navy-50/60 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-7">
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold text-navy-600">Bagikan:</span>
+          <a href="#" data-modal-share-wa target="_blank" rel="noopener" class="grid h-9 w-9 place-items-center rounded-xl bg-white text-accent-600 shadow-soft transition hover:bg-accent-50" aria-label="Bagikan ke WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="grid h-9 w-9 place-items-center rounded-xl bg-white text-navy-600 shadow-soft transition hover:bg-navy-100" aria-label="Bagikan ke LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 112.5 6 2.48 2.48 0 014.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05a4.2 4.2 0 013.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.46c0-1.3 0-2.98-1.82-2.98s-2.1 1.42-2.1 2.89V21h-4z"/></svg>
+          </a>
+        </div>
+        <div class="flex gap-2">
+          <button type="button" data-modal-close class="btn btn-outline btn-sm">Tutup</button>
+          <a href="contact.html" class="btn btn-primary btn-sm">Coba Gratis 14 Hari</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="bg-navy-950 pt-16 text-navy-200">
+    <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+      <div class="grid gap-10 pb-12 lg:grid-cols-[1.4fr_repeat(3,minmax(0,1fr))]">
+
+        <div>
+          <a href="index.html" class="flex items-center gap-2.5" aria-label="AkunPro — beranda">
+            <span class="grid h-10 w-10 place-items-center rounded-xl bg-white/10">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 19l5.2-14h5.6L20 19h-4l-1-3H9l-1 3H4z" fill="#12b76a"/>
+                <path d="M10.2 13h3.6L12 7.6 10.2 13z" fill="#0a1730"/>
+              </svg>
+            </span>
+            <span class="text-lg font-extrabold tracking-tight text-white">AkunPro</span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-relaxed text-navy-200/80">
+            Software akuntansi dan manajemen bisnis modern untuk UMKM hingga korporasi di Indonesia.
+            Rapikan pembukuan, percepat laporan, ambil keputusan dengan data.
+          </p>
+
+          <form class="mt-6 max-w-sm" data-newsletter novalidate>
+            <label for="footer-email" class="text-xs font-semibold uppercase tracking-wide text-navy-300">Tips akuntansi mingguan</label>
+            <div class="mt-2 flex gap-2">
+              <input id="footer-email" type="email" name="email" placeholder="email@perusahaan.com" required
+                     class="w-full rounded-xl border border-white/15 bg-white/5 px-3.5 py-2.5 text-sm text-white placeholder:text-navy-300/70 focus:border-accent-400 focus:outline-none focus:ring-4 focus:ring-accent-500/20">
+              <button type="submit" class="btn btn-primary btn-sm px-4">Kirim</button>
+            </div>
+            <p data-newsletter-note class="mt-2 text-sm" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Produk</h2>
+          <ul class="mt-4 space-y-2.5">
+            <li><a href="features.html#invoicing" class="footer-link">Smart Invoicing</a></li>
+            <li><a href="features.html#inventory" class="footer-link">Inventory &amp; HPP</a></li>
+            <li><a href="features.html#reporting" class="footer-link">Laporan Keuangan</a></li>
+            <li><a href="features.html#multi" class="footer-link">Multi-Cabang</a></li>
+            <li><a href="features.html#paket" class="footer-link">Perbandingan Paket</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Perusahaan</h2>
+          <ul class="mt-4 space-y-2.5">
+            <li><a href="about.html" class="footer-link">Tentang Kami</a></li>
+            <li><a href="about.html#keamanan" class="footer-link">Keamanan Data</a></li>
+            <li><a href="about.html#tim" class="footer-link">Tim Support</a></li>
+            <li><a href="blog.html" class="footer-link">Blog &amp; Edukasi</a></li>
+            <li><a href="contact.html" class="footer-link">Hubungi Kami</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-sm font-bold uppercase tracking-wide text-white">Kontak</h2>
+          <ul class="mt-4 space-y-3 text-sm text-navy-200/80">
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 10-14 0c0 5.4 7 11 7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
+              Gedung Cyber 2, Lt. 15<br>Jl. HR Rasuna Said, Jakarta Selatan
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 015.5 3h1.7a1 1 0 01.96.73l.9 3.1a1 1 0 01-.4 1.1l-1.4 1a13 13 0 006.8 6.8l1-1.4a1 1 0 011.1-.4l3.1.9a1 1 0 01.73.96v1.7A2.5 2.5 0 0118.5 21 15.5 15.5 0 013 5.5z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="tel:+622150001234" class="hover:text-white">(021) 5000 1234</a>
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6 8.5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="mailto:halo@akunpro.id" class="hover:text-white">halo@akunpro.id</a>
+            </li>
+            <li class="flex gap-2.5">
+              <svg class="mt-0.5 flex-none text-accent-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Senin–Jumat 08.00–17.00 WIB
+            </li>
+          </ul>
+
+          <div class="mt-5 flex gap-2">
+            <a href="#" class="social-btn" aria-label="Instagram AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 112.5 6 2.48 2.48 0 014.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05a4.2 4.2 0 013.78-2.08c4.04 0 4.79 2.66 4.79 6.12V21h-4v-5.46c0-1.3 0-2.98-1.82-2.98s-2.1 1.42-2.1 2.89V21h-4z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="YouTube AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.9-.5-5.7a3 3 0 00-2.1-2.1C18.6 3.7 12 3.7 12 3.7s-6.6 0-8.4.5a3 3 0 00-2.1 2.1C1 8.1 1 12 1 12s0 3.9.5 5.7a3 3 0 002.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 002.1-2.1C23 15.9 23 12 23 12zM9.8 15.4V8.6l5.9 3.4z"/></svg></a>
+            <a href="#" data-wa-link data-wa-text="Halo AkunPro, saya menemukan kontak Anda dari footer website." class="social-btn" aria-label="WhatsApp AkunPro"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-6 text-xs text-navy-300 sm:flex-row">
+        <p>&copy; <span data-current-year>2025</span> AkunPro. Seluruh hak cipta dilindungi.</p>
+        <div class="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">
+          <a href="#" class="hover:text-white">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-white">Syarat &amp; Ketentuan</a>
+          <a href="#" class="hover:text-white">Perjanjian Lisensi</a>
+          <span class="flex items-center gap-1.5 text-accent-400">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 118 0v3" stroke-linecap="round"/></svg>
+            SSL 256-bit
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================== FLOATING WHATSAPP ====================== -->
+  <div class="wa-widget" data-wa-widget>
+    <div class="wa-bubble hidden" data-wa-bubble>
+      <p class="font-semibold text-navy-950">Ada pertanyaan dari artikel? 📖</p>
+      <p class="mt-0.5 text-navy-600">Tanyakan langsung ke konsultan akuntansi kami.</p>
+    </div>
+
+    <div class="wa-panel" data-wa-panel role="dialog" aria-label="Konsultasi WhatsApp AkunPro">
+      <div class="flex items-start gap-3 bg-navy-950 px-4 py-3.5">
+        <span class="grid h-10 w-10 flex-none place-items-center rounded-full bg-accent-500 text-white">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4z"/></svg>
+        </span>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm font-bold text-white">Tim Konsultan AkunPro</p>
+          <p class="flex items-center gap-1.5 text-[11px] text-accent-300">
+            <span class="h-1.5 w-1.5 rounded-full bg-accent-400"></span> Online · balas cepat
+          </p>
+        </div>
+        <button type="button" data-wa-close class="rounded-lg p-1 text-white/60 transition hover:bg-white/10 hover:text-white" aria-label="Tutup panel WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+
+      <div class="space-y-2 p-3.5">
+        <p class="px-1 pb-1 text-xs text-navy-500">Pilih topik agar kami langsung paham kebutuhan Anda:</p>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya punya pertanyaan soal perhitungan PPN untuk bisnis saya.">🧾 Tanya soal pajak</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya ingin konsultasi soal pengelolaan arus kas bisnis.">💧 Konsultasi arus kas</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya ingin menjadwalkan demo produk untuk bisnis saya.">📅 Jadwalkan demo produk</a>
+        <a href="#" class="wa-quick" data-wa-link data-wa-text="Halo AkunPro, saya ingin mengusulkan topik artikel untuk dibahas di blog.">✍️ Usulkan topik artikel</a>
+      </div>
+    </div>
+
+    <button type="button" class="wa-toggle" data-wa-toggle aria-expanded="false" aria-label="Buka konsultasi WhatsApp">
+      <svg class="wa-icon-chat" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0012.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 005.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.45-8.4zM12.06 21.8a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 012.89 6.99c0 5.45-4.43 9.88-9.89 9.88zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.03 1.02-1.03 2.48s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.42-.08-.12-.28-.2-.58-.35z"/></svg>
+      <svg class="wa-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
