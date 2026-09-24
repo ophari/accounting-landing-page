@@ -1,0 +1,10 @@
+# Project Requirements & Internal Notes
+PRD.md
+robots.txt
+sitemap.xml
+
+# System & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
